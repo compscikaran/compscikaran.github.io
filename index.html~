@@ -167,13 +167,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>
-                        Hi, my name is Karan. I am an undergrad student at Delhi Technological University.
-                        I am passionate about programming and software developement. I constantly play around
-                        with new technologies. For me Chat Bots are the next best thing and i love programming them.
-                        Having taken inspiration from the Software Craftsmanship movement I try to make 
-                        my software clean, maintainable and testable. Check out what i have been upto.
-                    </p>
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
                 </div>
                 
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -212,11 +206,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Contact Me</h3>
-                        <p> Phone - +919899291638
-                            <br>Email - gkaran184@gmail.com</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
