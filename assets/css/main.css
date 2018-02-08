@@ -87,6 +87,10 @@ a:after {
 .navbar {
 	text-transform: uppercase;
 	margin-bottom: 0px;
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	top: 0px;
 }
 
 .navbar-inverse {
@@ -179,7 +183,9 @@ a:after {
 	background-color: #ffffff;
 }
 
-
+#port {
+	padding: 15px;
+}
 
 /* Blog Date*/
 bd {
