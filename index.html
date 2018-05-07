@@ -28,9 +28,10 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
 						<li><a href="#ww">Home</a></li>
-            <li><a href="#work">Work</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#projects">Projects</a></li>
 						<li><a href="#footer">Contact</a></li>
-						<li><a href="https://medium.com/@compscikaran">Blog</a></li>
+						<li><a href="https://medium.com/software-apprentice">Blog</a></li>
           </ul>
         </div>
       </div>
@@ -84,8 +85,12 @@
 					</div>
 			</div>
 			</div>
+			</div>
+			</div>
+		<div id="projects">
+		<div class="container pt">
 		<div class="row">
-		<br><h1 style="text-align: center">Portfolio</h1>
+		<br><h1 style="text-align: center">Projects</h1>
 		<div class="row mt centered">	
 			<div class="col-lg-4" id="port">
 				<a class="zoom green" href="https://github.com/compscikaran/letskanban"><img class="img-responsive" src="assets/img/portfolio/1.png" alt="" /></a>
@@ -135,5 +140,21 @@
 		</div>
 	</div>
     <script src="assets/js/bootstrap.min.js"></script>
+		<script>
+				$(function() {
+					$('a[href*=#]:not([href=#])').click(function() {
+						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+							if (target.length) {
+								$('html,body').animate({
+									scrollTop: target.offset().top
+								}, 500);
+								return false;
+							}
+						}
+					});
+				});
+				</script>
   </body>
 </html>
