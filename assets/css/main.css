@@ -46,6 +46,11 @@ p {
     text-align: center;
 }
 
+.nametag {
+	font-weight: 700;
+	letter-spacing: 2px;
+
+}
 /* Links */
 a {
     color: #1abc9c;
