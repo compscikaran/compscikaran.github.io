@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>Karan Gupta</title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/hover.zoom.js"></script>
+	<script src="assets/js/hover.zoom.conf.js"></script>
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">KARAN GUPTA</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+										
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="ww">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 centered">
+					<br>
+					<br>
+					
+					<h1 class="nametag">My Playlists</h1>
+					<p style="text-align:justify">Below are some playlists that are part of my Unique Voices series which explore hitherto
+							known or unknown voices away from mainstream music. These artists probably aren't appreciated
+							as much as some of the others but are a breath of fresh air considering the current state of the music industry.
+						</p>
+					
+				</div>
+			</div>
+
+		</div>
+		<div id="projects">
+			<div class="container pt">
+					<div class="row mt centered">
+						<div class="col-md-2"></div>
+						<div class="col-md-4" style="padding: 30px;">
+							<a href="https://itunes.apple.com/in/playlist/prateek-kuhad-inspired/pl.u-38oWZy3sPRLqmaq">
+								<img class="img-responsive" src="assets/img/playlists/1.png" alt="" style="width:75%;height:auto;"/>
+							</a>
+						</div>
+						
+						<div class="col-lg-4" style="padding: 30px;">
+							<a  href="https://itunes.apple.com/in/playlist/james-bay-drowning/pl.u-DdAN85qtapqgRKg">
+								<img class="img-responsive" src="assets/img/playlists/2.png" alt="" style="width:75%;height:auto;"/>
+							</a>
+						</div>
+						<div class="col-lg-2"></div>
+					</div>
+						
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<h4>My HQ</h4>
+						<p>
+							84,F-Block,
+							<br/> Kamla Nagar,
+							<br/> Delhi, India.
+						</p>
+					</div>
+					<div class="col-lg-4">
+						<h4>Find Me Here</h4>
+						<p>
+							<a href="https://www.linkedin.com/in/compscikaran/">Linkedin</a>
+							<br/>
+							<a href="https://github.com/compscikaran">Github</a>
+							<br/>
+
+						</p>
+					</div>
+					<div class="col-lg-4">
+						<h4>Contact Me</h4>
+						<p>
+							Phone - +919899291638
+							<br/> Email - karangupta184@outlook.com
+						</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script>
+			$(function () {
+				$('a[href*=#]:not([href=#])').click(function () {
+					if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop: target.offset().top
+							}, 500);
+							return false;
+						}
+					}
+				});
+			});
+		</script>
+</body>
+
+</html>
