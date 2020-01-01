@@ -267,3 +267,7 @@ bt {
 	opacity: 0.8;
 	filter: grayscale(100%);
 }
+
+#icon {
+	color: white;
+}
