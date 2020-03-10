@@ -12,10 +12,7 @@
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
 	<link href="assets/css/main.css" rel="stylesheet">
 	<link href="assets/css/font-awesome.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js" integrity="sha256-A783Hjykc5z+a+ph8BJrfLuU5HE+lwZR+azVrLPZ45k=" crossorigin="anonymous"></script>	
 </head>
-
 <body>
 	<div class="navbar navbar-inverse navbar-static-top">
 		<div class="container">
@@ -34,6 +31,9 @@
 						</a>&nbsp;&nbsp;&nbsp;&nbsp;
 						<a href="https://medium.com/@compscikaran" id="icon">
 							<i class="fa fa-medium fa-3x"></i>
+						</a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="https://twitter.com/compscikaran" id="icon">
+							<i class="fa fa-twitter fa-3x"></i>
 						</a>
 				</a>
 			</div>
@@ -55,7 +55,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div id="ww">
 		<div class="container">
 			<div class="row">
@@ -80,11 +79,8 @@
 						</div>
 					</button>
 					<br><br><br>
-				</div>
-				
+				</div>	
 		</div>
-		
-		
 		<br>
 		<br>
 		<br>
@@ -168,43 +164,16 @@
 
 		<div id="projects">
 				<div class="container pt">
-						<div class="row">
-								<div class="col-lg-8 col-lg-offset-2">
-									<br><br><h1>Some Things I've built</h1>
-								</div>
-							</div>
-							
-						<div class="row mt centered">
-							<div class="col-lg-4">
-								<a  href="https://github.com/compscikaran/pocketchange">
-									<img class="img-responsive projectbanner" src="assets/img/portfolio/pocketchange.png" alt="" />
-								</a>
-							</div>
-							<div class="col-lg-4">
-								<a  href="https://github.com/compscikaran/loandefault">
-									<img class="img-responsive projectbanner" src="assets/img/portfolio/loandefault.png" alt="" />
-								</a>
-							</div>
-
-							<div class="col-lg-4">
-								<a  href="https://github.com/compscikaran/nightlight">
-									<img class="img-responsive projectbanner" src="assets/img/portfolio/nightlight.png" alt="" />
-								</a>
-							</div>
-							<div class="col-lg-4">
-								<a href="https://github.com/compscikaran/microscope">
-									<img class="img-responsive projectbanner" src="assets/img/portfolio/microscope.png" alt="" />
-								</a>
-							</div>
-							<div class="col-lg-4">
-								<a href="https://github.com/compscikaran/recognize">
-									<img class="img-responsive projectbanner" src="assets/img/portfolio/recognize.png" alt="" />
-								</a>
-							</div>
-							<div class="col-lg-4"></div>
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<br><br><h1>Some Things I've built</h1>
 						</div>
 					</div>
+							
+					<div class="row" id="projectlist">
+					</div>
 				</div>
+		</div>
 		<br>
 		<br>
 		<br>
@@ -213,33 +182,11 @@
 				<div class="row centered">
 					<p>Hosted By &nbsp;<i class="fa fa-github fa-3x"></i>&nbsp; Pages</p>
 				</div>
-				
 			</div>
 		</div>
-		
-		
-		<script>
-			$(function () {
-				$('a[href*=#]:not([href=#])').click(function () {
-					if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-						var target = $(this.hash);
-						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-						if (target.length) {
-							$('html,body').animate({
-								scrollTop: target.offset().top
-							}, 500);
-							return false;
-						}
-					}
-				});
-			});
-		</script>
-
-		<!-- <script>
-		$("img").mouseover( function() {
-			$(this).css("filter", "none");
-		});
-		</script> -->
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js" integrity="sha256-A783Hjykc5z+a+ph8BJrfLuU5HE+lwZR+azVrLPZ45k=" crossorigin="anonymous"></script>	
+		<script src="assets/scroller.js"></script>
+		<script src="assets/github.js"></script>
 </body>
-
 </html>
