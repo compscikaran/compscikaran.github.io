@@ -2,6 +2,7 @@ $(document).ready(function() {
     $("form").submit(function (e) { 
         var title = $("#title").val().toString();
         var content = quill.root.innerHTML.toString();
+        var token = $("#token").val().toString();
         if(title != null && content != null && title.length != 0 && content.length != 0) {
             var data = {
                 "title": title,
@@ -12,7 +13,7 @@ $(document).ready(function() {
                 type: "POST",
                 url: 'http://localhost:8080/api/posts/new',
                 data: JSON.stringify(data),
-                headers: {'Authentication': 'e907d158-8127-42b0-8617-2adb42e3b59c'},
+                headers: {'Authentication': token },
                 dataType: "json",
                 contentType: 'application/json',
                 success: function(resp) {
