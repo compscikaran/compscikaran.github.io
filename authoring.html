@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>Karan Gupta</title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+						<a href="https://github.com/compscikaran" id="icon">
+							<i class="fa fa-github fa-3x"></i>
+						</a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="https://www.linkedin.com/in/compscikaran/" id="icon">
+							<i class="fa fa-linkedin-square fa-3x"></i>
+						</a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="https://medium.com/@compscikaran" id="icon">
+							<i class="fa fa-medium fa-3x"></i>
+						</a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="https://twitter.com/compscikaran" id="icon">
+							<i class="fa fa-twitter fa-3x"></i>
+						</a>
+				</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#ww">Home</a>
+					</li>
+					<li>
+						<a href="#tech">About Me</a>
+					</li>
+					<li>
+						<a href="#work">Experience</a>
+					</li>
+					<li>
+						<a href="#projects">Projects</a>
+					</li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="ww">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 ">
+                    <h1>Authoring Interface</h1>
+                    <form id="newpost" action="javascript:alert('Submitting Form ...');">
+                        <div class="form-group">
+                            <label for="title">Title</label><br>
+                            <input type="text" class="form-control" id="title" name="title"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="content">Content</label><br>
+                            <div id="editor-container">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+				</div>	
+            </div>
+        </div>
+        </div>
+		<br>
+		<br>
+		<br>
+		<div id="footer">
+			<div class="container">
+				<div class="row centered">
+					<p>Hosted By &nbsp;<i class="fa fa-github fa-3x"></i>&nbsp; Pages</p>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js" integrity="sha256-A783Hjykc5z+a+ph8BJrfLuU5HE+lwZR+azVrLPZ45k=" crossorigin="anonymous"></script>	
+        <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+        <script src="assets/quill.js"></script>
+		<script src="assets/addpost.js"></script>
+    </body>
+</html>
