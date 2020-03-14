@@ -11,7 +11,7 @@ $(document).ready(function() {
             console.log(data);
             $.ajax({
                 type: "POST",
-                url: 'http://localhost:8080/api/posts/new',
+                url: 'http://152.67.6.81/api/posts/new',
                 data: JSON.stringify(data),
                 headers: {'Authentication': token },
                 dataType: "json",
