@@ -154,7 +154,6 @@ a:after {
 #ww {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background-color: #f2f2f2;
 }
 
 
@@ -261,7 +260,6 @@ bt {
 }
 
 #projects {
-	background-color: #f2f2f2;
 }
 
 #faded-image {
@@ -282,5 +280,9 @@ bt {
 }
 
 #projects {
+	text-align: center;
+}
+
+th {
 	text-align: center;
 }
