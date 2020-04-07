@@ -34,6 +34,9 @@ h1 {
 	text-align: center;
 }
 
+h3 {
+	text-align: center;
+}
 
 
 /* Paragraph & Typographic */
@@ -43,9 +46,6 @@ p {
     font-size: 16px;
 }
 
-.centered {
-    text-align: center;
-}
 
 .nametag {
 	font-weight: 700;
@@ -279,6 +279,9 @@ bt {
 	text-align: center;
 }
 
+#tech {
+	text-align: center;
+}
 #projects {
 	text-align: center;
 }
@@ -286,3 +289,15 @@ bt {
 th {
 	text-align: center;
 }
+
+.centered {
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	text-align: center;
+  }
+
+  #logos {
+	  text-align: center;
+  }
