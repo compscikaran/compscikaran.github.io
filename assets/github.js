@@ -8,12 +8,11 @@ $(document).ready(function() {
                 var title = name[0].toUpperCase() +  name.slice(1);
                 var desc = node["description"];
                 var language = node["language"];
-                var lastUpdate = node["updated_at"].split("T")[0];
                 var link = node["html_url"];
                 var content = "<tr><td>" + 
                 "<a href=\"" + link + "\" + style=\"text-decoration:none;\">" + 
                 title + "</a></td><td>" + desc + "</td><td>" + language + 
-                "</td><td>" + lastUpdate + "</td></tr>";
+                "</td></tr>";
                 if(desc != null) {
                     $("#projectlist").append(content);
                 }
