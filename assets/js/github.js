@@ -9,10 +9,7 @@ $(document).ready(function() {
                 var desc = node["description"];
                 var language = node["language"];
                 var link = node["html_url"];
-                var content = "<tr><td>" + 
-                "<a href=\"" + link + "\" + style=\"text-decoration:none;\">" + 
-                title + "</a></td><td>" + desc + "</td><td>" + language + 
-                "</td></tr>";
+                var content = `<tr><td><a href="${link}" style="text-decoration:none">${title}</a></td><td>${desc}</td><td>${language}</td></tr>`;
                 if(desc != null) {
                     $("#projectlist").append(content);
                 }
