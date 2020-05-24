@@ -304,5 +304,10 @@ th {
   }
 
   .published {
-	style="text-align:center"
+	text-align: center;
+  }
+
+  .nodec {
+	  text-decoration: none;
+	  color:#428bca;
   }

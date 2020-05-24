@@ -1,5 +1,12 @@
 $(document).ready(function() {
-    $.ajax('https://blog.karangupta.xyz/wp-json/wp/v2/posts', {
+    let searchParams = new URLSearchParams(window.location.search)
+    let param = searchParams.get('tag');
+    if(param != null)
+        var url = 'https://blog.karangupta.xyz/wp-json/wp/v2/posts?tags=' + param;
+    else
+        var url = 'https://blog.karangupta.xyz/wp-json/wp/v2/posts';
+    
+    $.ajax(url, {
         success: function(data, status, xhr) {
             data.sort((a,b) => (a.modified > b.modified) ? -1: 1)
             data.forEach(node => {
