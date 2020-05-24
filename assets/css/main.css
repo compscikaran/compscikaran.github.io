@@ -13,7 +13,7 @@ body {
   	background-color: #FFFFFF;
   	font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
 
     -webkit-font-smoothing: antialiased;
@@ -43,7 +43,7 @@ h3 {
 p {
     line-height: 28px;
     margin-bottom: 25px;
-    font-size: 16px;
+   
 }
 
 
