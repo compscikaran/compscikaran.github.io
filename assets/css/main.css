@@ -315,3 +315,6 @@ th {
 	  text-align: center;
   }
  
+  .logo {
+	  min-width: 200px;
+  }
