@@ -8,7 +8,7 @@ $(document).ready(function () {
                 var id = node["id"]
                 var name = node["name"];
                 var link = 'blog.html?tag=' + id; 
-                var element = `<a class="nodec" href="${link}">${name}</a>, `;
+                var element = `<a class="nodec" href="${link}">${name}</a>&nbsp;&nbsp;`;
                 if (name != null) {
                     $("#links").append(element);
                 }
