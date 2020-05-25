@@ -15,6 +15,7 @@ $(document).ready(function () {
                 var title = node["title"]["rendered"];
                 var date = new Date(node["date"]).toISOString().split('T')[0];
                 var content = node["content"]["rendered"];
+                
                 var tags = node["tags"];
 
                 if (title != null) {
@@ -32,7 +33,6 @@ $(document).ready(function () {
                 tags = tags.join(",");
                 $.ajax('https://blog.karangupta.xyz/wp-json/wp/v2/tags?include=' + tags, {
                     success: function (tagData, status, xhr) {
-                        $("#content").append("TAGS:&nbsp;&nbsp;")
                         tagData.forEach(node => {
                             var name = node["name"];
                             var id = node["id"];
