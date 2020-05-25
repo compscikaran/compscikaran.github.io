@@ -159,8 +159,7 @@ a:after {
 
 #footer {
 	background-color: #428bca;
-	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-top: 20px; 
 	width: 100%;
 }
 
@@ -311,3 +310,5 @@ th {
 	  text-decoration: none;
 	  color:#428bca;
   }
+
+ 

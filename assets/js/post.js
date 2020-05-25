@@ -1,8 +1,11 @@
 $(document).ready(function () {
     let searchParams = new URLSearchParams(window.location.search)
-    let param = searchParams.get('t');
-    if(param != null) 
-        var url = 'https://blog.karangupta.xyz/wp-json/wp/v2/posts?slug=' + param;
+    let param1 = searchParams.get('title');
+    let param2 = searchParams.get('id');
+    if(param1 != null) 
+        var url = 'https://blog.karangupta.xyz/wp-json/wp/v2/posts?slug=' + param1;
+    else if(param2 != null)
+        var url = 'https://blog.karangupta.xyz/wp-json/wp/v2/posts?id=' + param2;
     else
         $(location).attr('href', 'blog.html')
 
@@ -13,10 +16,7 @@ $(document).ready(function () {
                 var date = new Date(node["date"]).toISOString().split('T')[0];
                 var content = node["content"]["rendered"];
                 var tags = node["tags"];
-                console.log(title);
-                console.log(date);
-                console.log(content)
-                console.log(tags)
+
                 if (title != null) {
                     $("#title").append(title);
                 }

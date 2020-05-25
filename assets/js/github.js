@@ -5,7 +5,7 @@ $(document).ready(function () {
         success: function (data, status, xhr) {
             data.sort((a, b) => (a.updated_at > b.updated_at) ? -1 : 1)
             data.slice(0, 13).forEach(node => {
-                console.log(node);
+            
                 var name = node["name"];
                 var title = name[0].toUpperCase() + name.slice(1);
                 var desc = node["description"];

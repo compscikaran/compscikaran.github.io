@@ -14,10 +14,8 @@ $(document).ready(function() {
                 var title = node["title"]["rendered"];
                 var date = new Date(node["date"]).toISOString().split('T')[0];
                 var content = node["excerpt"]["rendered"].replace(/<[^>]*>?/gm, '');
-                console.log(title);
-                console.log(date);
-                console.log(content)
-                var element = `<div class="row"><div class="col-lg-8 col-lg-offset-2 card"><a href="post.html?t=${id}"><h3>${title}</h3></a><br><p><i>${date}</i><br><br>${content}<p></div><div class="col-lg-2"></div></div><br><br>`;
+
+                var element = `<div class="row"><div class="col-lg-8 col-lg-offset-2 card"><a href="post.html?title=${id}"><h3>${title}</h3></a><br><p><i>${date}</i><br><br>${content}<p></div><div class="col-lg-2"></div></div><br><br>`;
                 if(node != null) {
                     $("#content").append(element);
                 }
