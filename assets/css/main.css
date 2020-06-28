@@ -156,7 +156,9 @@ a:after {
 	padding-bottom: 70px;
 }
 
-
+i {
+	color: #428bca;
+}
 #footer {
 	background-color: #428bca;
 	padding-top: 20px; 
